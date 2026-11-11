@@ -1,5 +1,9 @@
 import torch
-# External API credentials are supplied through the environment.
+from transformers import (
+    AutoProcessor,
+    Mistral3Config,
+    Mistral3ForConditionalGeneration,
+)
 
 from diffusers import (
     AutoencoderKLFlux2,
